@@ -1,2 +1,1 @@
-https://github.com/uscwebdev/itp104-submissions-evelynengen
-file:///Users/evelynengen/Documents/GitHub/itp104-submissions-evelynengen/index.html 
+https://uscwebdev.github.io/itp104-submissions-evelynengen/ 
