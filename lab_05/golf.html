@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Golf Club Ordering | Engen</title>
+<style>
+ #header {
+    text-align: center;
+    font-size: 20px;
+    background-image:url(https://media.istockphoto.com/id/813012122/photo/teeing-off-with-golf-club-and-golf-ball.jpg?s=170667a&w=0&k=20&c=WWyb8eg8TBHdVxlD5pSleWWm_aLy4Vi5q2QAng8Fv8c=);
+    background-size: cover;
+	background-position: center;
+    height: 600px;
+    color: #FFF;
+    line-height: 650px;
+    text-shadow: 0px 0px 10px #000;  
+ }
+
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    margin: 0px;
+}
+
+ body {
+  margin: 0px;
+  padding:0px;
+ }
+
+ h2 {
+    text-align: center;
+ }
+
+ .form-row {
+			margin: 10px 0px;
+			display: flex;
+		}
+
+        .left-col {
+			width: 200px;
+		}
+
+.red {
+    color: red;
+}
+
+#todo {
+			width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 10px;
+}
+
+</style>
+</head>
+
+<body>
+    <div id="header">
+    <h1> Golf Clubs Ordering</h1>
+</div>
+
+<h2> Order Form</h2>
+
+<form action="confirmation1.html">
+
+    <div id="todo">
+    <div class="form-row">
+        <div class="left-col">
+    <label for="name-id">First Name:</label>
+</div>
+    <input type="text" id="name-id" placeholder="John">
+</div>
+
+<div class="form-row">
+    <div class="left-col">
+        <label for="lastname-id">Last Name:</label>
+    </div>
+    <input type="text" id="lastname-id" placeholder="Doe">
+</div>
+
+<div class="form-row">
+    <div class="left-col">
+        <label for="email-id">Email:</label>
+    </div>
+    <input type="text" id="email-id" placeholder="jdoe@golf.com">
+</div>
+
+<div class="form-row">
+    <div class="left-col">
+        <label for="phone-id">Phone:</label>
+    </div>
+    <input type="text" id="phone-id" placeholder="(123) 456-7890">
+</div>
+
+<div class="form-row">
+    Club Brand:
+    <label>
+        <input type="radio" name="brand">
+        TaylorMade
+        <input type="radio" name="brand">
+        Callaway
+        <input type="radio" name="brand">
+        Ping
+    </label>
+
+</div>
+
+<div class="form-row">
+    Club Types:
+    <label>
+        <input type="checkbox">
+        Woods
+    </label>
+
+    <label>
+        <input type="checkbox">
+        Irons
+    </label>
+
+    <label>
+        <input type="checkbox">
+        Hybrids
+    </label>
+
+    <label>
+        <input type="checkbox">
+        Wedges
+    </label>
+
+    <label>
+        <input type="checkbox">
+        Putters
+    </label>
+</div>
+
+<div id="form-row">
+    <label for="color-id"> Grip Color:</label>
+    <select id="color-id">
+        <option>Black</option>
+        <option>White</option>
+        <option>Red</option>
+			<option>Orange</option>
+			<option>Yellow</option>
+            <option>Green</option>
+            <option>Blue</option>
+            <option>Purple</option>
+            <option>Pink</option>
+    </select>
+
+</div>
+
+<div class="form-row">
+    <div class="left-col">
+    Comments:
+    <textarea id="msg-id" placeholder="Type here..."></textarea>
+</div>
+</div>
+
+
+
+<div class="form-row">
+    <label>
+        <input type="checkbox">
+        I accept the terms & conditions.
+    </label>
+
+<hr>
+
+<div class="form-row">
+    <button type="submit" class="red"> Send</button>
+    <button type="reset"> Clear</button>
+
+</div>
+</form>
+
+</div>
+
+</body>
+
+
+</html>
