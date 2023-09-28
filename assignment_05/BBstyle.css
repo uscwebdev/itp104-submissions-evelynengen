@@ -1,0 +1,38 @@
+
+#navbar a {
+    text-decoration: none;
+text-shadow: 0px 0px 10px #000;
+    display: block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid #fff;
+}
+#navbar {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 3px 5px #777;
+    background-color: lightblue;
+
+}
+
+#navbar a:hover, #navbar #highlight-nav {
+    color: white;
+    border-bottom: 2px solid green;
+}
+
+#footer {
+    background-color: #867;
+    color: #FFF;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 0.8em;
+}
+
+h1{
+    margin: 0px;
+    font-size: 50pt;
+}
