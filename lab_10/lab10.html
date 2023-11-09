@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Evelyn Engen | Peruvian Food </title>
+
+<style>
+
+h1 {
+    font-size: 300%;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0px 0px 10px #000;
+}
+
+html {
+    background-image: url("https://lp-cms-production.imgix.net/2023-10/Peru-Lima--Mark-Green-RFE-shutterstockeditorial1424973962.jpg?auto=format&w=1440&h=810&fit=crop&q=75");
+    background-size: cover;
+
+}
+
+.move {
+    position:absolute;
+    border-radius: 15px;
+    border: 2px solid red;
+}
+
+
+#imgs:hover #C-500ms {
+    transform: scale(1.5) rotate(-25deg) translate(-200px, -80px);
+}
+
+#imgs:hover #A-1s {
+    transform: scale(1.5) rotate(15deg) translate(-25px, -60px);
+}
+
+#imgs:hover #L-2s {
+    transform: scale(1.5) rotate(25deg) translate(160px, 20px);
+}
+
+
+#C-500ms {
+    transition: all 500ms;
+
+}
+
+#A-1s {
+    
+    transition: all 1s;
+
+}
+
+#L-2s {
+    
+    transition: all 2s;
+
+}
+
+.section {
+			width: 300px;
+			margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: row;
+            padding-top: 200px;
+		}
+
+
+   
+</style>
+</head>
+<body>
+
+    <h1> Comida Peruana</h1>
+
+    <div id="imgs" class="section">
+        <!-- <div class="container"> -->
+        <img id="C-500ms" class="move" src="imgs10/ceviche.jpeg" alt="Ceviche Peruano">
+            <!-- </div> -->
+       <!-- <div class="container"> -->
+        <img id="A-1s" class="move" src="imgs10/anticucho.jpeg" alt="Anticucho">
+            <!-- </div> -->
+            <!-- <div class="container"> -->
+        <img id="L-2s" class="move" src="imgs10/lomo.jpeg" alt="Lomo Saltado">
+            <!-- </div> -->
+    </div>
+
+</body>
+</html>
