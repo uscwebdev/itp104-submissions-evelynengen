@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Evelyn Engen | Final Project: Peru </title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merienda&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+<meta name="description" content="¡Bienvenidos! Welcome to your one-stop shop for everything about Peru! Are you interested in learning more about the country? Take a deep dive into Peruvian history, culture, cuisine, landmarks, and more! As a Peruvian American, I wanted to share my knowledge and love for the country. I explain Peru's most popular dishes, customs, and current news. Have you ever wanted to visit one of the seven wonders of the world? Well, if you are interested in visiting, I also provide my best travel tips on Peru's most popular places to visit! So grab a friend, family member, neighbor, or loved one to learn more, and book your trip to Peru today!">
+
+<style>
+
+    html {
+        background-image: url("imgs8/forest.jpeg");
+        background-size: cover;
+    }
+
+    h1 {
+        color:darkred;
+	    text-shadow: 0px 0px 10px #fff;
+        font-size: 200%;
+        font-family: 'Merienda', cursive;
+
+    }
+
+
+    h2 {
+        color:darkred;
+	    text-shadow: 0px 0px 10px #fff;
+        font-size: 200%;
+        font-family: 'Merienda', cursive;
+
+    }
+
+
+    #boxy {
+        background-color: gold;
+        border-radius: 30px;
+        max-width: 430px;
+        text-align: center;
+    }
+
+#top-menu ul {
+    position: absolute;
+    display: none;
+    
+}
+
+
+#navbar a:hover, #navbar #highlight-nav {
+    color: white;
+    text-shadow: 0px 0px 10px #000;
+    border-bottom: 2px solid green;
+}
+
+#navbar li:hover > ul {
+    display: block;
+}
+
+#navbar {
+    left: 0px;
+    right: 0px;
+    font-family: 'Merienda', cursive;
+}
+
+#navbar li:hover {
+    background-color: #fc0;
+}
+
+#navbar a {
+    color: darkred;
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+
+#navbar ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar li {
+    background-color: gold;
+    /* width of main is 7020px, so 720 / 4 options = 180px width  */
+
+    width: 180px;
+    text-align: center;
+    position: relative;
+}
+
+#top-menu {
+    display: flex;
+    align-items: flex-start;
+    float: right;
+    justify-content: end;
+}
+
+#navbar li:hover > ul {
+    display: block;
+}
+
+
+iframe {
+			width: 100%;
+			height: 500px;
+            border-radius: 15px;
+            border: 2px solid yellow;
+            margin-top: 0px;
+
+		}
+
+ #row1-imgs {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+ img {
+        width: 350px;
+        height: auto;
+        margin: 20px;
+        border-radius: 15px;
+        border: 2px solid #000;
+    }
+
+  #boxy2 {
+        background-color: whitesmoke;
+        border-radius: 30px;
+        max-width: 300px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #row1-imgs img {
+			display: block;
+		}
+
+    #row1-imgs .container {
+			max-width: 600px;
+			position: relative;
+			overflow: hidden;
+		}
+
+    #row1-imgs .overlay {
+        text-align: center;
+        color: #FFF;
+        text-shadow: 0px 0px 10px #000;
+        font-size: 2em;
+        position: absolute;
+        top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			padding-top: 90px;
+
+    }
+
+    #row1-imgs .overlay {
+			transition: all 1s;
+			transform: scale(2);
+			opacity: 0;
+		}
+
+        #row1-imgs .container:hover .overlay {
+			transform: scale(1);
+			opacity: 1;
+		}
+
+        #row1-imgs p {
+			transition: all 1s ease 0s;
+			opacity: 0;
+		}
+
+        #row1-imgs .container:hover p {
+			opacity: 1;
+			transition: all 1s ease 1s;
+		}
+
+
+#footer {
+    background-color: darkred;
+    color: #FFF;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 0.8em;
+}
+
+#rightnews {
+			width: 200px;
+            height: auto;
+            float: right;
+			padding: 15px;
+            margin-left: 50px;
+            margin-top: 0px;
+  
+		}
+
+#todo {
+	width: 1000px;
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}	
+
+#leftnews{
+	width: 250px;
+    height: auto;
+    float: left;
+	padding: 10px;
+    margin-left: 30px;
+}
+
+.pics {
+    width: 300px;
+    height: auto;
+}
+
+
+#dropdown h3 {
+			margin: 90px;
+			padding: 20px;
+            border-radius: 15px;
+			background-color: darkred;
+            color: white;
+            width: 750px;
+            height: 25px;
+            line-height: 25px;
+            position: relative;
+            bottom: 60px;
+            
+		}
+
+ #dropdown h3:hover + p {
+			max-height: 150px;
+            padding: 15px;
+            border-radius: 15px;
+            margin-right: 0px;
+            position: relative;
+            /* left: 150px; */
+		}
+
+
+ #dropdown p {
+			transition: all 2.5s;
+			max-height: 0px;
+			overflow: hidden;
+            margin-right: 0px;
+            background-color: beige;
+        width: 700px;
+        font-size: 1.2em;
+        position: relative;
+            left: 100px;
+            bottom: 120px;
+    }
+
+
+    #intro-p1 {
+        width: 300px;
+			/* max-height: 150px; */
+			background-color: darkred;
+            color:white;
+            margin-left: 130px;
+            border-radius: 15px;
+            padding: 15px;
+        }
+
+        #intro-p2 {
+            width: 300px;
+			/* max-height: 100px; */
+			background-color: darkred;
+            color:white;
+            margin-left: 60px;
+            margin-right: 10px;
+            border-radius: 15px;
+            padding: 15px;
+        }
+
+        #intro-p3 {
+            width: 300px;
+			/* max-height: 100px; */
+			background-color: darkred;
+            color:white;
+            margin-right: 30px;
+            margin-left: 60px;
+            border-radius: 15px;
+            padding: 15px;
+        }
+
+        #parentbox {
+            display: flex;
+             flex-wrap: wrap;
+               flex-direction: row;
+               margin: 20px;
+               margin-bottom: 80px;
+        }
+
+        @media (max-width: 767px) {
+			body {
+				padding-top: 0px;
+			}
+        }
+
+       #parentbox p {
+            font-size: .9em;
+            max-width: 300px;
+            max-height: 150px;
+            height: auto;
+            text-align: center;
+        }
+
+</style>
+</head>
+
+<body>
+
+    <div id="navbar">
+
+		<ul id="top-menu">
+			<li><a id="highlight-nav" href="finalproject.html">Home</a>
+			<ul id="sub-menu">
+				<li><a href="finalproject.html#intro-section">Introduction</a></li>
+				<li><a href="finalproject.html#news-section">Current News</a></li>
+			</ul>
+		</li>
+          <li><a target="_blank" href="finalhistory.html">History</a></li>
+         <li><a target="_blank" href="finalculture.html">Culture</a>
+             <ul id="sub-menu">
+                 <li><a href="finalproject.html#culture-section">Art & Customs</a></li>
+                 <li><a href="finalproject.html#food-section">Cuisine</a></li>
+             </ul>
+            </li>
+    <li><a target="_blank" href="finaltravel.html">Travel</a></li>
+    </ul>
+
+</div> <!-- #navbar -->
+
+<div id="boxy">
+<h1> ¡Bienvendios! Welcome! </h1>
+</div>
+
+<iframe width="800" height="400" src="https://www.youtube.com/embed/fTvifYm7koA?si=5N7HylKwCD4bcev0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; mute; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<div id="boxy">
+<h2 id="intro-section"> Introduction</h2>
+</div>
+
+<div id="row1-imgs">
+    <div class="container">
+    <img src="imgs8/flag.png" alt="Peruvian Flag">
+        <div class="overlay"> Peruvian Flag</div>
+    </div>
+
+    <div class="container">
+<img src="imgs8/dina.jpeg" alt="President 2023">
+        <div class="overlay"> Dina Boluarte, President</div>
+        </div>
+
+        <div class="container">
+<img src="imgs8/animal.jpeg" alt="national animal">
+        <div class="overlay"> Vicuña, National Animal </div>
+        </div>
+
+</div>
+
+<div id="parentbox">
+    <div id="intro-p1">
+<p> The Peruvian flag features red and white horizontal stripes, symbolizing the bloodshed during the fight for independence and the snow-capped Andes Mountains, respectively. The central coat of arms embodies the nation's history and prosperity with a wreath representing victory, peace, and a cornucopia symbolizing agricultural abundance. This flag serves as a powerful and condensed emblem of Peru's rich heritage, struggles, and national identity.</p>
+    </div>
+
+<div id="intro-p2">
+<p>Dina Ercilia Boluarte Zegarra is a Peruvian politician, civil servant, and lawyer currently serving as the first woman President of Peru since 7 December 2022. She is a member of the Peru Libre political party and has served as the first vice president and minister at the Ministry of Development and Social Inclusion. Boluarte was expelled from the Peru Libre party, she aligned with the right-wing Congress for political support instead of the constituents that elected her. </p>
+</div>
+
+
+<div id="intro-p3">
+  <p>The vicuña, Peru's national animal, is culturally significant for its luxurious wool and historical reverence by the Inca civilization. Protected by laws due to the threat of extinction, the vicuña symbolizes Peru's cultural heritage and the importance of conservation and sustainable resource use. The vicuña's fine wool, prized for its quality and softness, has been a source of economic importance for Peru, contributing to the country's textile industry. </p>
+
+</div>
+</div>
+
+<!-- end of text boxes for intro -->
+
+
+<div id="boxy">
+<h2 id="news-section" > Current News </h2>
+</div>
+
+
+<div id="todo">
+
+    <div id="leftnews">
+        <div class="img-container">
+            <img class="pics" src="imgs8/newsimg1.jpeg" alt="News img 1">
+            <img class="pics" src="imgs8/newsimg2.jpeg" alt="News img 2">
+            <img class="pics" src="imgs8/newsimg3.jpeg" alt="News img 3">
+            <img class="pics" src="imgs8/newsimg4.jpeg" alt="News img 4">
+        </div>
+
+</div>
+
+<div id="rightnews">
+	<div id="dropdown" class="section">
+
+		<h3 id="title-1">Recession-hit Peru aims to boost investment with stimulus package - 11/9/23</h3>
+		<p>Peru's government on Thursday announced a package of more than two dozen new measures aimed at boosting investments in the Andean nation, which has been hit by a recession. To read the full article, <a target="_blank" href="https://www.reuters.com/world/americas/peru-economy-minister-announces-stimulus-measures-amid-recession-2023-11-09/">click here.</a></p>
+		
+		<h3 id="title-2">After Peru and Colombia exit, used-car startup Kavak refocuses on Mexico, exec says  11/9/23</h3>
+		<p>
+			Used-car startup Kavak is re-concentrating efforts on its home market, a top executive said, following the company's announcement it would close shop in Peru and Colombia. To read the full article, <a target="_blank" href="https://www.reuters.com/business/autos-transportation/after-peru-colombia-exit-used-car-startup-kavak-refocuses-mexico-exec-says-2023-11-09/">click here.</a></p>
+		
+		<h3 id="title-3">Mexican Congress holds second UFO session featuring Peruvian mummies - 11/7/23</h3>
+		<p>Mexico's Congress heard from researchers on Tuesday who declared authentic a set of three-fingered Peruvian mummies recently presented as potential evidence of non-human life forms, while declining to certify that the remains were extraterrestrial. To read the full article, <a target="_blank" href="https://www.reuters.com/world/americas/mexican-congress-holds-second-ufo-session-featuring-peruvian-mummies-2023-11-08/">click here.</a></p>
+
+        <h3 id="title-3">Peruvian annual inflation eases to lowest level in more than two years - 10/1/23</h3>
+            <p>Annual inflation in Peru decelerated to 5.04% in September to hit its lowest level in more than two years, according to official figures published on Sunday, though consumer prices remained some way above the central bank's target rate. To read the full article, <a target="_blank" href="https://www.reuters.com/world/americas/peruvian-annual-inflation-eases-lowest-level-more-than-two-years-2023-10-01/">click here.</a></p>
+
+	</div> <!-- #accordion -->
+
+
+</div>
+
+
+</div>
+
+
+<div id="footer">
+	Property of Evelyn Engen &copy; 2023
+</div>
+
+</body>
+</html>
