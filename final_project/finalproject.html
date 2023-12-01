@@ -4,6 +4,9 @@
 
 	<title>Evelyn Engen | Final Project: Peru </title>
 
+    <link rel="stylesheet" href="finalstyle.css">
+
+
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merienda&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
 <meta name="description" content="¡Bienvenidos! Welcome to your one-stop shop for everything about Peru! Are you interested in learning more about the country? Take a deep dive into Peruvian history, culture, cuisine, landmarks, and more! As a Peruvian American, I wanted to share my knowledge and love for the country. I explain Peru's most popular dishes, customs, and current news. Have you ever wanted to visit one of the seven wonders of the world? Well, if you are interested in visiting, I also provide my best travel tips on Peru's most popular places to visit! So grab a friend, family member, neighbor, or loved one to learn more, and book your trip to Peru today!">
@@ -11,7 +14,7 @@
 <style>
 
     html {
-        background-image: url("imgs8/forest.jpeg");
+        background-image: url("https://www.bmz.de/resource/blob/49410/038c1f3d198793a696c2304ccaba38fd/peru-regenwald-keith-cuddeback-data.jpg");
         background-size: cover;
         scroll-behavior: smooth;
     }
@@ -21,6 +24,10 @@
 	    text-shadow: 0px 0px 10px #fff;
         font-size: 200%;
         font-family: 'Merienda', cursive;
+        background-color: gold;
+        border-radius: 30px;
+        max-width: 430px;
+        text-align: center;
 
     }
 
@@ -30,77 +37,13 @@
 	    text-shadow: 0px 0px 10px #fff;
         font-size: 200%;
         font-family: 'Merienda', cursive;
-
-    }
-
-
-    #boxy {
         background-color: gold;
         border-radius: 30px;
         max-width: 430px;
         text-align: center;
+
     }
 
-#top-menu ul {
-    position: absolute;
-    display: none;
-    
-}
-
-
-#navbar a:hover, #navbar #highlight-nav {
-    color: white;
-    text-shadow: 0px 0px 10px #000;
-    border-bottom: 2px solid green;
-}
-
-#navbar li:hover > ul {
-    display: block;
-}
-
-#navbar {
-    left: 0px;
-    right: 0px;
-    font-family: 'Merienda', cursive;
-}
-
-#navbar li:hover {
-    background-color: #fc0;
-}
-
-#navbar a {
-    color: darkred;
-    text-decoration: none;
-    display: block;
-    height: 50px;
-    line-height: 50px;
-}
-
-#navbar ul{
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-}
-
-#navbar li {
-    background-color: gold;
-    /* width of main is 7020px, so 720 / 4 options = 180px width  */
-
-    width: 180px;
-    text-align: center;
-    position: relative;
-}
-
-#top-menu {
-    display: flex;
-    align-items: flex-start;
-    float: right;
-    justify-content: end;
-}
-
-#navbar li:hover > ul {
-    display: block;
-}
 
 
 iframe {
@@ -182,16 +125,6 @@ iframe {
 			transition: all 1s ease 1s;
 		}
 
-
-#footer {
-    background-color: darkred;
-    color: #FFF;
-    text-align: center;
-    height: 50px;
-    line-height: 50px;
-    font-size: 0.8em;
-}
-
 #rightnews {
 			width: 200px;
             height: auto;
@@ -243,7 +176,6 @@ iframe {
             border-radius: 15px;
             margin-right: 0px;
             position: relative;
-            /* left: 150px; */
 		}
 
 
@@ -263,7 +195,6 @@ iframe {
 
     #intro-p1 {
         width: 300px;
-			/* max-height: 150px; */
 			background-color: darkred;
             color:white;
             margin-left: 130px;
@@ -273,7 +204,6 @@ iframe {
 
         #intro-p2 {
             width: 300px;
-			/* max-height: 100px; */
 			background-color: darkred;
             color:white;
             margin-left: 60px;
@@ -284,7 +214,6 @@ iframe {
 
         #intro-p3 {
             width: 300px;
-			/* max-height: 100px; */
 			background-color: darkred;
             color:white;
             margin-right: 30px;
@@ -314,6 +243,7 @@ iframe {
             height: auto;
             text-align: center;
         }
+        
 
 </style>
 </head>
@@ -324,16 +254,16 @@ iframe {
 
 		<ul id="top-menu">
 			<li><a id="highlight-nav" href="finalproject.html">Home</a>
-			<ul id="sub-menu">
+			<ul>
 				<li><a href="finalproject.html#intro-section">Introduction</a></li>
 				<li><a href="finalproject.html#news-section">Current News</a></li>
 			</ul>
 		</li>
           <li><a target="_blank" href="finalhistory.html">History</a></li>
          <li><a target="_blank" href="finalculture.html">Culture</a>
-             <ul id="sub-menu">
-                 <li><a href="finalproject.html#culture-section">Art & Customs</a></li>
-                 <li><a href="finalproject.html#food-section">Cuisine</a></li>
+             <ul>
+                 <li><a href="finalculture.html#culture-section">Art & Customs</a></li>
+                 <li><a href="finalculture.html#food-section">Cuisine</a></li>
              </ul>
             </li>
     <li><a target="_blank" href="finaltravel.html">Travel</a></li>
@@ -341,29 +271,28 @@ iframe {
 
 </div> <!-- #navbar -->
 
-<div id="boxy">
+
 <h1> ¡Bienvendios! Welcome! </h1>
-</div>
 
-<iframe width="800" height="400" src="https://www.youtube.com/embed/fTvifYm7koA?si=5N7HylKwCD4bcev0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; mute; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<div id="boxy">
+<iframe src="https://www.youtube.com/embed/fTvifYm7koA?si=5N7HylKwCD4bcev0" title="YouTube video player" allow="accelerometer; autoplay; mute; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
 <h2 id="intro-section"> Introduction</h2>
-</div>
 
 <div id="row1-imgs">
     <div class="container">
-    <img src="imgs8/flag.png" alt="Peruvian Flag">
+    <img src="imgsfinal/flag.png" alt="Peruvian Flag">
         <div class="overlay"> Peruvian Flag</div>
     </div>
 
     <div class="container">
-<img src="imgs8/dina.jpeg" alt="President 2023">
+<img src="imgsfinal/dina.jpeg" alt="President 2023">
         <div class="overlay"> Dina Boluarte, President</div>
         </div>
 
         <div class="container">
-<img src="imgs8/animal.jpeg" alt="national animal">
+<img src="imgsfinal/animal.jpeg" alt="national animal">
         <div class="overlay"> Vicuña, National Animal </div>
         </div>
 
@@ -388,19 +317,19 @@ iframe {
 <!-- end of text boxes for intro -->
 
 
-<div id="boxy">
+
 <h2 id="news-section" > Current News </h2>
-</div>
+
 
 
 <div id="todo">
 
     <div id="leftnews">
         <div class="img-container">
-            <img class="pics" src="imgs8/newsimg1.jpeg" alt="News img 1">
-            <img class="pics" src="imgs8/newsimg2.jpeg" alt="News img 2">
-            <img class="pics" src="imgs8/newsimg3.jpeg" alt="News img 3">
-            <img class="pics" src="imgs8/newsimg4.jpeg" alt="News img 4">
+            <img class="pics" src="imgsfinal/newsimg1.jpeg" alt="News img 1">
+            <img class="pics" src="imgsfinal/newsimg2.jpeg" alt="News img 2">
+            <img class="pics" src="imgsfinal/newsimg3.jpeg" alt="News img 3">
+            <img class="pics" src="imgsfinal/newsimg4.jpeg" alt="News img 4">
         </div>
 
 </div>
@@ -408,20 +337,20 @@ iframe {
 <div id="rightnews">
 	<div id="dropdown" class="section">
 
-		<h3 id="title-1">Recession-hit Peru aims to boost investment with stimulus package - 11/9/23</h3>
+		<h3>Recession-hit Peru aims to boost investment with stimulus package - 11/9/23</h3>
 		<p>Peru's government on Thursday announced a package of more than two dozen new measures aimed at boosting investments in the Andean nation, which has been hit by a recession. To read the full article, <a target="_blank" href="https://www.reuters.com/world/americas/peru-economy-minister-announces-stimulus-measures-amid-recession-2023-11-09/">click here.</a></p>
 		
-		<h3 id="title-2">After Peru and Colombia exit, used-car startup Kavak refocuses on Mexico, exec says  11/9/23</h3>
+		<h3>After Peru and Colombia exit, used-car startup Kavak refocuses on Mexico, exec says  11/9/23</h3>
 		<p>
 			Used-car startup Kavak is re-concentrating efforts on its home market, a top executive said, following the company's announcement it would close shop in Peru and Colombia. To read the full article, <a target="_blank" href="https://www.reuters.com/business/autos-transportation/after-peru-colombia-exit-used-car-startup-kavak-refocuses-mexico-exec-says-2023-11-09/">click here.</a></p>
 		
-		<h3 id="title-3">Mexican Congress holds second UFO session featuring Peruvian mummies - 11/7/23</h3>
+		<h3>Mexican Congress holds second UFO session featuring Peruvian mummies - 11/7/23</h3>
 		<p>Mexico's Congress heard from researchers on Tuesday who declared authentic a set of three-fingered Peruvian mummies recently presented as potential evidence of non-human life forms, while declining to certify that the remains were extraterrestrial. To read the full article, <a target="_blank" href="https://www.reuters.com/world/americas/mexican-congress-holds-second-ufo-session-featuring-peruvian-mummies-2023-11-08/">click here.</a></p>
 
-        <h3 id="title-3">Peruvian annual inflation eases to lowest level in more than two years - 10/1/23</h3>
+        <h3>Peruvian annual inflation eases to lowest level in more than two years - 10/1/23</h3>
             <p>Annual inflation in Peru decelerated to 5.04% in September to hit its lowest level in more than two years, according to official figures published on Sunday, though consumer prices remained some way above the central bank's target rate. To read the full article, <a target="_blank" href="https://www.reuters.com/world/americas/peruvian-annual-inflation-eases-lowest-level-more-than-two-years-2023-10-01/">click here.</a></p>
 
-	</div> <!-- #accordion -->
+	</div>
 
 
 </div>

@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Evelyn Engen | Final Project: Peru </title>
+
+    <link rel="stylesheet" href="finalstyle.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merienda&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+<meta name="description" content="Dive into the vibrance of Peruvian culture, where the arts come alive, dances enchant, rituals resonate, and customs unveil the soul of a nation. Immerse yourself in the rhythmic beats of traditional dances, witness time-honored rituals that bridge ancient and modern worlds, and explore the rich customs that define Peru's identity. From the canvas of indigenous arts to the pulsating energy of folk dances, our exploration extends to the heart of Peruvian cuisine, showcasing iconic dishes that tantalize taste buds and reflect centuries of culinary heritage. Join us on a cultural odyssey, where every section reveals the colorful mosaic of Peru's living traditions.">
+
+<style>
+
+html {
+    background-image: url("https://thumbs.dreamstime.com/b/vertical-shot-colors-vinicunca-mountains-peru-vertical-shot-colors-vinicunca-mountains-peru-259338146.jpg");
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+.headpics {
+    width: 100%;
+    height: 430px;
+    border-radius: 15px;
+    border: 2px solid darkred;
+}
+
+#header-animation img {
+			display: block;
+			width: 100%;
+		}
+
+#header-animation .overlay {
+            color: goldenrod;
+            text-shadow: 0px 0px 10px #000;
+			font-size: 6em;
+            font-family: 'Merienda', cursive;
+			text-align: center;
+			position: absolute;
+            bottom: 300px;
+            border-radius: 15px;
+			left: 7px;
+			right: 6px;
+			
+			padding: 20px;
+		}
+
+#header-animation .overlay {
+			transition: all 1s;
+			transform: scale(2);
+			opacity: 0;
+		}
+
+#header-animation .container:hover .overlay {
+			transform: scale(1);
+			opacity: 1;
+		}
+
+
+
+#lowheader {
+        display: flex;
+             flex-wrap: wrap;
+               flex-direction: row;
+               margin: 20px;
+               margin-bottom: 80px;
+               width: auto;
+    }
+
+
+#firstp {
+        width: 505px;
+        max-height: 400px;
+        font-size: 1.15em;
+        text-align: center;
+        background-color: olivedrab;
+            color:white;
+            margin-right: 5px;
+            margin-left: 90px;
+            border-radius: 15px;
+            border: 2px solid darkred;
+            padding: 25px;
+    }
+
+
+#secondp {
+        width: 518px;
+        max-height: 350px;
+        font-size: 1.2em;
+        text-align: center;
+        background-color: darkgoldenrod;
+            color:white;
+            margin-right: 30px;
+            margin-left: 60px;
+            margin-top: 55px;
+            border-radius: 15px;
+            border: 2px solid darkred;
+            padding: 25px;
+    }
+
+    #secondp {
+			transition: all 1s;
+		}
+
+#secondp:hover {
+			transform: scale(1, 1.3);
+		}
+
+        #scale {
+			transition: all 1s;
+		}
+
+#scale:hover {
+			transform: scale(1, 1.3);
+		}
+
+#lowheader {
+			transition: all 1s;
+		}
+
+#lowheader:hover {
+			transform: scale(1, 1.3);
+		}
+
+        #scale {
+			transition: all 1s;
+		}
+
+#scale:hover {
+			transform: scale(1, 1.3);
+		}
+
+        iframe {
+			width: 600px;
+			height: 400px;
+            border-radius: 15px;
+            border: 2px solid darkred;
+            margin-top: 50px;
+            margin-left: 100px;
+
+		}
+
+    #wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        color:darkred;
+        font-size: 200%;
+        font-family: 'Merienda', cursive;
+        background-color: gold;
+        border-radius: 30px;
+        max-width: 430px;
+        text-align: center;
+    }
+
+    h2 {
+        color:darkred;
+        font-size: 200%;
+        font-family: 'Merienda', cursive;
+        background-color: gold;
+        border-radius: 30px;
+        max-width: 430px;
+        text-align: center;
+    }
+
+
+    #todo {
+	width: 1440px;
+	display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+}	
+
+
+.lomo > img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #fff;
+}
+
+.papa > img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #fff;
+
+}
+
+.tallarines > img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #fff;
+
+}
+
+.arroz > img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #fff;
+}
+
+.cuy > img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #fff;
+
+}
+
+.ceviche > img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #fff;
+
+}
+
+
+.jalea > img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #fff;
+
+}
+
+.causa > img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #fff;
+
+}
+
+.pollo > img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #fff;
+
+
+}
+
+.rocoto > img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #fff;
+}
+
+.anticucho > img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #fff;
+}
+
+.alfajor > img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #fff;
+}
+
+.picarones > img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #fff;
+}
+
+.lucuma > img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #fff;
+}
+
+.inca > img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #fff;
+}
+
+
+.caption:hover + p {
+			visibility: visible;
+		}
+
+ .caption {
+			margin: 5px;
+			opacity: 1.0;
+		}
+
+        .caption:hover {
+			opacity: 0.7;
+		}      
+
+        .lomo > p {
+			text-align: center;
+			visibility: hidden;
+            padding-top: 0px;
+		}
+        .papa > p {
+			text-align: center;
+			visibility: hidden;
+            padding-top: 0px;
+
+		}
+        .tallarines > p {
+			text-align: center;
+			visibility: hidden;
+            padding-top: 0px;
+
+		}
+        .arroz > p {
+			text-align: center;
+			visibility: hidden;
+            padding-top: 0px;
+
+		}
+
+        .cuy > p {
+			text-align: center;
+			visibility: hidden;
+            padding-top: 0px;
+
+		}
+        .ceviche > p {
+			text-align: center;
+			visibility: hidden;
+            padding-top: 0px;
+
+		}
+
+        .jalea > p {
+			text-align: center;
+			visibility: hidden;
+            padding-top: 0px;
+
+		}
+
+        .causa > p {
+			text-align: center;
+			visibility: hidden;
+            padding-top: 0px;
+
+		}
+
+        .pollo > p {
+			text-align: center;
+			visibility: hidden;
+            padding-top: 0px;
+
+		}
+
+        .rocoto > p {
+			text-align: center;
+			visibility: hidden;
+            padding-top: 0px;
+
+		}
+
+        .anticucho > p {
+			text-align: center;
+			visibility: hidden;
+            padding-top: 0px;
+
+		}
+
+        .alfajor > p {
+			text-align: center;
+			visibility: hidden;
+            padding-top: 0px;
+
+		}
+
+        .picarones > p {
+			text-align: center;
+			visibility: hidden;
+            padding-top: 0px;
+
+		}
+
+        .lucuma > p {
+			text-align: center;
+			visibility: hidden;
+            padding-top: 0px;
+
+		}
+
+        .inca > p {
+			text-align: center;
+			visibility: hidden;
+            padding-top: 0px;
+
+		}
+
+.lomo {
+    position: relative;
+}
+
+.lomo p{
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    line-height: 200px;
+    font-size: 2em;
+
+}
+
+.papa{
+    position: relative;
+}
+
+.papa p{
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    line-height: 200px;
+    font-size: 1.8em;
+
+}
+.tallarines{
+    position: relative;
+}
+
+.tallarines p{
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    line-height: 200px;
+    font-size: 2em;
+
+}
+
+.arroz{
+    position: relative;
+}
+
+.arroz p{
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    line-height: 200px;
+    font-size: 1.8em;
+
+}
+
+.cuy{
+    position: relative;
+}
+
+.cuy p{
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    line-height: 200px;
+    font-size: 2em;
+
+}
+
+.ceviche{
+    position: relative;
+}
+
+.ceviche p{
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    line-height: 200px;
+    font-size: 2em;
+
+}
+
+.jalea{
+    position: relative;
+}
+
+.jalea p{
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    line-height: 200px;
+    font-size: 2em;
+
+}
+.causa{
+    position: relative;
+}
+
+.causa p{
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    line-height: 200px;
+    font-size: 2em;
+
+}
+
+.pollo{
+    position: relative;
+}
+
+.pollo p{
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    line-height: 200px;
+    font-size: 2em;
+
+}
+
+.rocoto{
+    position: relative;
+}
+
+.rocoto p{
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    line-height: 200px;
+    font-size: 2em;
+}
+
+.anticucho{
+    position: relative;
+}
+
+.anticucho p{
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    line-height: 200px;
+    font-size: 2em;
+}
+
+.alfajor{
+    position: relative;
+}
+
+.alfajor p{
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    line-height: 200px;
+    font-size: 2em;
+}
+
+.picarones{
+    position: relative;
+}
+
+.picarones p{
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    line-height: 200px;
+    font-size: 2em;
+}
+
+.lucuma{
+    position: relative;
+}
+
+.lucuma p{
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    line-height: 200px;
+    font-size: 2em;
+}
+
+.inca{
+    position: relative;
+}
+
+.inca p{
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    line-height: 200px;
+    font-size: 2em;
+}
+
+
+p {
+        color: #fff;
+    }
+
+
+    #bottom {
+        display: flex;
+             flex-wrap: wrap;
+               flex-direction: row;
+               margin: 20px;
+               margin-bottom: 80px;
+               width: auto;
+    }
+
+    #wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+#space {
+    width: 1440px;
+    height: 80px;
+}
+
+</style>
+</head>
+
+<body>
+
+    <div id="navbar">
+
+		<ul id="top-menu">
+			<li><a href="finalproject.html">Home</a>
+			<ul id="sub-menu">
+				<li><a href="finalproject.html#intro-section">Introduction</a></li>
+				<li><a href="finalproject.html#news-section">Current News</a></li>
+			</ul>
+		</li>
+          <li><a target="_blank" href="finalhistory.html">History</a></li>
+         <li><a id="highlight-nav" target="_blank" href="finalculture.html">Culture</a>
+             <ul id="sub-menu">
+                 <li><a href="finalculture.html#culture-section">Art & Customs</a></li>
+                 <li><a href="finalculture.html#food-section">Cuisine</a></li>
+             </ul>
+            </li>
+    <li><a target="_blank" href="finaltravel.html">Travel</a></li>
+    </ul>
+</div> <!-- #navbar -->
+
+<div id="space" > </div>
+
+<div id="header-animation">
+  
+<div class="container">
+    <img class="headpics" src="imgsfinal/ropa1.jpeg" alt="header pic">
+    <div class="overlay">Peruvian Culture</div>
+</div>
+</div>
+
+<h1 id="culture-section"> Art & Customs </h1>
+
+<div id="wrap">
+<div id="lowheader" class="section">
+<p id="firstp" > 
+    Peru's clothing and cultural traditions are richly diverse, reflecting the country's indigenous roots and the influence of various civilizations throughout its history. Traditional Peruvian clothing often varies by region, with indigenous communities preserving distinctive styles that incorporate vibrant colors, intricate patterns, and handmade textiles. The iconic Andean garment, the poncho, is commonly worn by both men and women. Women often don intricately embroidered skirts and brightly colored shawls, while men may wear intricately woven hats and layered ponchos. In addition to clothing, Peru boasts a wealth of cultural traditions and customs, deeply rooted in indigenous practices. Traditional festivals, such as Inti Raymi, celebrate ancient Incan rituals, while contemporary events fuse indigenous and Spanish influences. Peruvian cuisine, renowned globally for its diverse flavors and unique ingredients, is a central part of cultural celebrations. Holidays like Inti Raymi and Fiestas Patrias are marked by colorful parades, traditional dances, and culinary feasts, showcasing the country's vibrant cultural tapestry and fostering a strong sense of national identity.</p>
+</div>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PU8b9ZsBWZs?si=bnKB9UHl7zJAH8se" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+
+<h2 id="food-section"> Peruvian Cuisine </h2>
+
+    <div id="todo">
+
+        <div class="lomo"> 
+            <img class="caption" src="imgsfinal/lomooo.jpeg" alt="Peruano dish 1">
+            <p>Lomo Saltado</p>
+        </div>
+
+        <div class="papa" > 
+            <img class="caption" src="imgsfinal/papasssss.webp" alt="Peruano dish 2">
+            <p>Papa a la Huancaina</p>
+        </div>
+            
+        <div class="tallarines" > 
+            <img class="caption" src="imgsfinal/verdes.jpeg" alt="Peruano dish 3">
+            <p>Tallarines Verdes</p>
+        </div>
+            
+        <div class="arroz"> 
+            <img class="caption" src="imgsfinal/arroz.jpeg" alt="Peruano dish 4">
+            <p>Arroz con Mariscos</p>
+        </div>
+
+        <div class="cuy"> 
+            <img class="caption" src="imgsfinal/cuy.jpeg" alt="Peruano dish 5">
+            <p>Cuy</p>
+        </div>
+
+        <div class="ceviche"> 
+            <img class="caption" src="imgsfinal/ceviche.jpeg" alt="Peruano dish 6">
+            <p>Ceviche</p>
+        </div>
+
+        <div class="jalea"> 
+            <img class="caption" src="imgsfinal/jalea.jpeg" alt="Peruano dish 7">
+            <p>Jalea</p>
+        </div>
+
+
+        <div class="causa"> 
+            <img class="caption" src="imgsfinal/causa.jpeg" alt="Peruano dish 8">
+            <p>Causa</p>
+        </div>
+
+    <div class="pollo" > 
+            <img class="caption" src="imgsfinal/pollo.jpeg" alt="Peruano dish 9">
+            <p>Pollo a la Brasa</p>
+        </div>
+
+    <div class="rocoto" > 
+        <img class="caption" src="imgsfinal/rocoto.jpeg" alt="Peruano dish 10">
+        <p>Rocoto</p>
+    </div>
+
+    <div class="anticucho" > 
+        <img class="caption" src="imgsfinal/anticucho.jpeg" alt="Peruano dish 11">
+        <p>Anticucho</p>
+    </div>
+        
+    <div class="alfajor" > 
+        <img class="caption" src="imgsfinal/alfajor.jpeg" alt="Peruano dessert 12">
+        <p>Alfajores</p>
+    </div>
+
+    <div class="picarones" > 
+        <img class="caption" src="imgsfinal/picarones.jpeg" alt="Peruano dessert 13">
+        <p>Picarones</p>
+    </div>
+        
+    <div class="lucuma" > 
+        <img class="caption" src="imgsfinal/lucuma.jpeg" alt="Peruano dessert 14">
+        <p>Lucuma Ice Cream</p>
+    </div>
+
+    <div class="inca" > 
+        <img class="caption" src="imgsfinal/inca.jpeg" alt="Peruano drink 15">
+        <p>Inca Kola</p>
+    </div>
+
+    </div>
+
+
+    <div id="wrap">
+        <div id="bottom" class="section">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Y3xrl2gI8uU?si=8h3gdkUhoV7HBaYS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+            <p id="secondp"> The presence of Chinese and Japanese communities in Peru can be traced back to the late 19th and early 20th centuries when these groups began to migrate in significant numbers. Chinese immigration to Peru primarily started with the arrival of contract laborers, known as "coolies," who were brought in to work on plantations and in the construction of the Transcontinental Railroad. Many Chinese immigrants eventually settled in Peru, contributing to the country's cultural and culinary landscape. Japanese migration to Peru gained momentum in the early 20th century when the Peruvian government sought to address labor shortages by encouraging Japanese immigration. The immigrants, known as Nikkei, brought their skills to various sectors, including agriculture and commerce. Over the years, both Chinese and Japanese communities have integrated into Peruvian society while preserving aspects of their rich cultural heritage, creating a multicultural and diverse society in Peru. </p>
+        </div>        
+        </div>
+
+    <div id="footer">
+        Property of Evelyn Engen &copy; 2023
+    </div>
+    
+</body>
+</html>
